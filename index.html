@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+      integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="error-message"></div>
+      <div class="mode-toggle">
+        <label class="switch">
+          <input type="checkbox" id="mode-toggle-checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <header id="heading">
+        <input type="text" class="search-box" placeholder="Search for a city" />
+        <button type="submit" class="btn">Search</button>
+      </header>
+      <div id="card">
+        <main class="container">
+          <section class="location">
+            <div class="city"></div>
+            <div class="date"></div>
+          </section>
+
+          <div class="current">
+            <div class="temp"><span></span></div>
+            <div class="weather"></div>
+            <div id="image-container"></div>
+            <div class="feels-like"></div>
+            <div class="high"></div>
+            <div class="low"></div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
